@@ -8,3 +8,4 @@ tags:
 所有的图片就在 ppt word xl 文件夹中 的media中
 ![123](./office提取图片/1.png)
 lalalalal
+自动更新喜喜
