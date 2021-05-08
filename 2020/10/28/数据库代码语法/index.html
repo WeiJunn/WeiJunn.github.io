@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>数据库代码语法 | mmmmuqq</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="登录数据库1myaql -u root -proot;">
+<meta property="og:type" content="article">
+<meta property="og:title" content="数据库代码语法">
+<meta property="og:url" content="http://example.com/2020/10/28/%E6%95%B0%E6%8D%AE%E5%BA%93%E4%BB%A3%E7%A0%81%E8%AF%AD%E6%B3%95/index.html">
+<meta property="og:site_name" content="mmmmuqq">
+<meta property="og:description" content="登录数据库1myaql -u root -proot;">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-10-28T05:59:08.000Z">
+<meta property="article:modified_time" content="2021-04-27T06:17:29.646Z">
+<meta property="article:author" content="mmmmuqq">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="mmmmuqq" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">mmmmuqq</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS 订阅"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="搜索"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="搜索"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-数据库代码语法" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2020/10/28/%E6%95%B0%E6%8D%AE%E5%BA%93%E4%BB%A3%E7%A0%81%E8%AF%AD%E6%B3%95/" class="article-date">
+  <time class="dt-published" datetime="2020-10-28T05:59:08.000Z" itemprop="datePublished">2020-10-28</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      数据库代码语法
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h5 id="登录数据库"><a href="#登录数据库" class="headerlink" title="登录数据库"></a>登录数据库</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">myaql -u root -proot;</span><br></pre></td></tr></table></figure>
+  <span id="more"></span>
+<h5 id="创建数据表库"><a href="#创建数据表库" class="headerlink" title="创建数据表库"></a>创建数据表库</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">create database 库名;</span><br></pre></td></tr></table></figure>
+<h5 id="创建数据表表"><a href="#创建数据表表" class="headerlink" title="创建数据表表"></a>创建数据表表</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">create table user</span><br><span class="line">(</span><br><span class="line">	name char(4),</span><br><span class="line">	tel int,</span><br><span class="line">	content int,</span><br><span class="line">	date VARCHAR(20)</span><br><span class="line">)ENGINE=MyISAM DEFAULT CHARSET=gb2312;</span><br></pre></td></tr></table></figure>
+<h5 id="查看数据表"><a href="#查看数据表" class="headerlink" title="查看数据表"></a>查看数据表</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">show databases;</span><br></pre></td></tr></table></figure>
+<h5 id="查看表的数据"><a href="#查看表的数据" class="headerlink" title="查看表的数据"></a>查看表的数据</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">desc 表名</span><br></pre></td></tr></table></figure>
+<h5 id="添加数据代码"><a href="#添加数据代码" class="headerlink" title="添加数据代码"></a>添加数据代码</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">insert into user(uid,sname,email,tnum,score)</span><br><span class="line">values(&#x27;123456&#x27;,&#x27;qert&#x27;,&#x27;123123@qq.com&#x27;,&#x27;1456789&#x27;,&#x27;100&#x27;);</span><br></pre></td></tr></table></figure>
+<h5 id="查看表格内容"><a href="#查看表格内容" class="headerlink" title="查看表格内容"></a>查看表格内容</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">select *</span><br><span class="line">from 表名;</span><br></pre></td></tr></table></figure>
+<h5 id="中文"><a href="#中文" class="headerlink" title="中文"></a>中文</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">set names gbk;</span><br></pre></td></tr></table></figure>
+<h5 id="修改表内的数据"><a href="#修改表内的数据" class="headerlink" title="修改表内的数据"></a>修改表内的数据</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">update 表名</span><br><span class="line">set orededate = &#x27;2016-10-01&#x27; 要改的数据 </span><br><span class="line">where bid=&#x27;3&#x27;and uid=&#x27;1003&#x27; 条件</span><br><span class="line">先数据后条件 不然就出错</span><br></pre></td></tr></table></figure>
+<h5 id="备份及还原数据库"><a href="#备份及还原数据库" class="headerlink" title="备份及还原数据库"></a>备份及还原数据库</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">-- 备份</span><br><span class="line">mysqldump -uroot -hlocalhost --default-character-set=gbk -p123456 网上书店&gt;D:/bak/网上书店_2001.sql</span><br><span class="line">-- 还原</span><br><span class="line">mysql -uroot -p 网上书店&lt;D:/bak/网上书店_2001.sql</span><br><span class="line">drop</span><br></pre></td></tr></table></figure>
+<h5 id="获取今天的年份"><a href="#获取今天的年份" class="headerlink" title="获取今天的年份"></a>获取今天的年份</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SELECT YEAR(NOW());</span><br></pre></td></tr></table></figure>
+<h5 id="查询日期之显示年份"><a href="#查询日期之显示年份" class="headerlink" title="查询日期之显示年份"></a>查询日期之显示年份</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">SELECT YEAR(orderdate)</span><br><span class="line">FROM b_order</span><br></pre></td></tr></table></figure>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2020/10/28/%E6%95%B0%E6%8D%AE%E5%BA%93%E4%BB%A3%E7%A0%81%E8%AF%AD%E6%B3%95/" data-id="ckof84onl000bngudgojqee3u" data-title="数据库代码语法" class="article-share-link">分享</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2020/11/11/%E5%8D%9A%E5%AE%A2/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">前一篇</strong>
+      <div class="article-nav-title">
+        
+          用hexo搭建博客并上传到github
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2020/09/03/flag/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">后一篇</strong>
+      <div class="article-nav-title">冲</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/04/">四月 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/03/">三月 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/01/">一月 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/11/">十一月 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/10/">十月 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/09/">九月 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/08/">八月 2020</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2021/04/17/office%E6%8F%90%E5%8F%96%E5%9B%BE%E7%89%87/">office提取图片</a>
+          </li>
+        
+          <li>
+            <a href="/2021/03/30/eclipse%E5%AF%BC%E5%85%A5%E9%A1%B9%E7%9B%AE/">eclipse导入项目</a>
+          </li>
+        
+          <li>
+            <a href="/2021/03/18/eclipse/">eclipse</a>
+          </li>
+        
+          <li>
+            <a href="/2021/03/02/React/">React</a>
+          </li>
+        
+          <li>
+            <a href="/2021/03/01/javascript/">javascript</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2021 mmmmuqq<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.4.1.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>

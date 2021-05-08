@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>网上书店创建表及录入数据 | mmmmuqq</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="写给zty的傻瓜式教程  首先打开介个软件 找到别人连接好的数据库 （没连接就自己连不会就退学把），右击找到命令行界面点他点他然后把下面这些代码复制进去按回车就行了，再问头给你剁下来。 1234567891011CREATE DATABASE 网上书店;use 网上书店;-- 会员表create table user(uid  char(4) primary key  not null,unam">
+<meta property="og:type" content="article">
+<meta property="og:title" content="网上书店创建表及录入数据">
+<meta property="og:url" content="http://example.com/2020/08/18/%E7%BD%91%E4%B8%8A%E4%B9%A6%E5%BA%97%E6%95%B0%E6%8D%AE/index.html">
+<meta property="og:site_name" content="mmmmuqq">
+<meta property="og:description" content="写给zty的傻瓜式教程  首先打开介个软件 找到别人连接好的数据库 （没连接就自己连不会就退学把），右击找到命令行界面点他点他然后把下面这些代码复制进去按回车就行了，再问头给你剁下来。 1234567891011CREATE DATABASE 网上书店;use 网上书店;-- 会员表create table user(uid  char(4) primary key  not null,unam">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/hexo/mmmmuqq/hexo.git/2020/08/18/%E7%BD%91%E4%B8%8A%E4%B9%A6%E5%BA%97%E6%95%B0%E6%8D%AE/1.png">
+<meta property="article:published_time" content="2020-08-18T02:56:05.000Z">
+<meta property="article:modified_time" content="2021-04-27T06:17:27.025Z">
+<meta property="article:author" content="mmmmuqq">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/hexo/mmmmuqq/hexo.git/2020/08/18/%E7%BD%91%E4%B8%8A%E4%B9%A6%E5%BA%97%E6%95%B0%E6%8D%AE/1.png">
+  
+    <link rel="alternate" href="/atom.xml" title="mmmmuqq" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">mmmmuqq</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS 订阅"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="搜索"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="搜索"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-网上书店数据" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2020/08/18/%E7%BD%91%E4%B8%8A%E4%B9%A6%E5%BA%97%E6%95%B0%E6%8D%AE/" class="article-date">
+  <time class="dt-published" datetime="2020-08-18T02:56:05.000Z" itemprop="datePublished">2020-08-18</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      网上书店创建表及录入数据
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="写给zty的傻瓜式教程"><a href="#写给zty的傻瓜式教程" class="headerlink" title=" 写给zty的傻瓜式教程 "></a><center> 写给zty的傻瓜式教程 <center></center></center></h1><h2 id="首先打开介个软件"><a href="#首先打开介个软件" class="headerlink" title=" 首先打开介个软件 "></a><center> 首先打开介个软件 <center></center></center></h2><p><img src="/hexo/mmmmuqq/hexo.git/2020/08/18/%E7%BD%91%E4%B8%8A%E4%B9%A6%E5%BA%97%E6%95%B0%E6%8D%AE/1.png" alt="jadf"><br>找到别人连接好的数据库 （没连接就自己连不会就退学把），右击找到命令行界面点他点他<br>然后把下面这些代码复制进去按回车就行了，再问头给你剁下来。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">CREATE DATABASE 网上书店;</span><br><span class="line">use 网上书店;</span><br><span class="line">-- 会员表</span><br><span class="line">create table user</span><br><span class="line">(</span><br><span class="line">uid  char(4) primary key  not null,</span><br><span class="line">uname varchar(20),</span><br><span class="line">email varchar(20),</span><br><span class="line">tnum varchar(15),</span><br><span class="line">score int</span><br><span class="line">)ENGINE=MyISAM DEFAULT CHARSET=gb2312;</span><br></pre></td></tr></table></figure>
+<span id="more"></span>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br></pre></td><td class="code"><pre><span class="line">-- 类别表</span><br><span class="line">create table category</span><br><span class="line">(</span><br><span class="line">cid int  primary key not null,</span><br><span class="line">cname varchar(16)</span><br><span class="line">)ENGINE=MyISAM DEFAULT CHARSET=gb2312;</span><br><span class="line">-- 图书表</span><br><span class="line">create table book</span><br><span class="line">(</span><br><span class="line">bid int  not null primary key,</span><br><span class="line">bname varchar(50) not null,</span><br><span class="line">author char(8),</span><br><span class="line">price float,</span><br><span class="line">publisher varchar(50),</span><br><span class="line">discount float,</span><br><span class="line">cid int,</span><br><span class="line">constraint fk_book_category foreign key (cid) references category(cid)</span><br><span class="line">)ENGINE=MyISAM DEFAULT CHARSET=gb2312;</span><br><span class="line"></span><br><span class="line">-- 订购表</span><br><span class="line">create table b_order</span><br><span class="line">(</span><br><span class="line"> uid int not null,</span><br><span class="line"> bid char(4) not null,</span><br><span class="line"> ordernum int default &#x27;1&#x27;,</span><br><span class="line"> orderdate datetime,</span><br><span class="line"> deliverydate datetime</span><br><span class="line">)ENGINE=MyISAM DEFAULT CHARSET=gb2312;</span><br><span class="line">-- 录入数据</span><br><span class="line">insert into user</span><br><span class="line">values</span><br><span class="line">    (&#x27;1001&#x27;,&#x27;何仙姑&#x27;,&#x27;Hxg18@163.com&#x27;,&#x27;13320101991&#x27;,&#x27;20&#x27;),</span><br><span class="line">    (&#x27;1002&#x27;,&#x27;平平人生&#x27;,&#x27;Lp011@126.com&#x27;,&#x27;13545158219&#x27;,&#x27;300&#x27;),</span><br><span class="line">    (&#x27;1003&#x27;,&#x27;四十不惑&#x27;,&#x27;12345@qq.com&#x27;,&#x27;18688268828&#x27;,&#x27;1000&#x27;),</span><br><span class="line">    (&#x27;1004&#x27;,&#x27;桃花岛主&#x27;,&#x27;810124@qq.com&#x27;,&#x27;1306811234&#x27;,&#x27;600&#x27;),</span><br><span class="line">    (&#x27;1005&#x27;,&#x27;水灵&#x27;,&#x27;Hxg18@371.cn&#x27;,&#x27;15838182503&#x27;,&#x27;150&#x27;),</span><br><span class="line">    (&#x27;1006&#x27;,&#x27;感动心灵&#x27;,&#x27;gandong@tom.com&#x27;,&#x27;13641161234&#x27;,&#x27;500&#x27;);</span><br><span class="line"></span><br><span class="line">insert into book (bid,bname,author,price,publisher,discount,cid)</span><br><span class="line">    values</span><br><span class="line">    (&#x27;1&#x27;,&#x27;中国时代&#x27;,&#x27;师永刚&#x27;,&#x27;39.0&#x27;,&#x27;作家出版社&#x27;,&#x27;27.8&#x27;,&#x27;1&#x27;),</span><br><span class="line">    (&#x27;2&#x27;,&#x27;中国历史的屈辱&#x27;,&#x27;王重旭&#x27;,&#x27;26.0&#x27;,&#x27;华夏出版社&#x27;,&#x27;18.2&#x27;,&#x27;2&#x27;),</span><br><span class="line">    (&#x27;3&#x27;,&#x27;就业要乘早&#x27;,&#x27;海文&#x27;,&#x27;28.0&#x27;,&#x27;海天出版社&#x27;,&#x27;19.3&#x27;,&#x27;3&#x27;),</span><br><span class="line">    (&#x27;4&#x27;,&#x27;房间&#x27;,&#x27;艾玛&#x27;,&#x27;37.6&#x27;,&#x27;人民文学出版社&#x27;,&#x27;26.3&#x27;,&#x27;4&#x27;),</span><br><span class="line">    (&#x27;5&#x27;,&#x27;平凡的世界&#x27;,&#x27;路遥&#x27;,&#x27;37.6&#x27;,&#x27;北京出版社&#x27;,&#x27;63.3&#x27;,&#x27;4&#x27;),</span><br><span class="line">    (&#x27;6&#x27;,&#x27;心灵鸡汤&#x27;,&#x27;管然&#x27;,&#x27;27.0&#x27;,&#x27;大与出版社&#x27;,&#x27;20.0&#x27;,&#x27;3&#x27;),</span><br><span class="line">    (&#x27;7&#x27;,&#x27;蜕&#x27;,&#x27;赵婷&#x27;,&#x27;32.0&#x27;,&#x27;上海出版社&#x27;,&#x27;28.5&#x27;,&#x27;3&#x27;);</span><br><span class="line"></span><br><span class="line">insert into category(cid,cname)</span><br><span class="line">values</span><br><span class="line">   (&#x27;1&#x27;,&#x27;历史&#x27;),</span><br><span class="line">   (&#x27;2&#x27;,&#x27;家教&#x27;),</span><br><span class="line">   (&#x27;3&#x27;,&#x27;文化&#x27;),</span><br><span class="line">   (&#x27;4&#x27;,&#x27;小说&#x27;);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">insert into b_order(uid,bid,ordernum, orderdate)</span><br><span class="line">values</span><br><span class="line">   (&#x27;1001&#x27;,&#x27;1&#x27;,&#x27;2&#x27;,&#x27;2016-03-12&#x27;),</span><br><span class="line">   (&#x27;1001&#x27;,&#x27;3&#x27;,&#x27;1&#x27;,&#x27;2016-04-15&#x27;),</span><br><span class="line">   (&#x27;1001&#x27;,&#x27;1&#x27;,&#x27;1&#x27;,&#x27;2016-09-15&#x27;),</span><br><span class="line">   (&#x27;1003&#x27;,&#x27;7&#x27;,&#x27;1&#x27;,&#x27;2016-12-14&#x27;),</span><br><span class="line">   (&#x27;1003&#x27;,&#x27;3&#x27;,&#x27;1&#x27;,&#x27;2016-10-10&#x27;),</span><br><span class="line">   (&#x27;1005&#x27;,&#x27;5&#x27;,&#x27;1&#x27;,&#x27;2016-08-17&#x27;),</span><br><span class="line">   (&#x27;1005&#x27;,&#x27;7&#x27;,&#x27;3&#x27;,&#x27;2016-11-12&#x27;),</span><br><span class="line">   (&#x27;1006&#x27;,&#x27;5&#x27;,&#x27;1&#x27;,&#x27;2016-09-18&#x27;),</span><br><span class="line">   (&#x27;1006&#x27;,&#x27;1&#x27;,&#x27;2&#x27;,&#x27;2016-10-21&#x27;),</span><br><span class="line">   (&#x27;1006&#x27;,&#x27;7&#x27;,&#x27;2&#x27;,&#x27;2016-11-21&#x27;);</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2020/08/18/%E7%BD%91%E4%B8%8A%E4%B9%A6%E5%BA%97%E6%95%B0%E6%8D%AE/" data-id="ckof84onn000cngud756ybz9w" data-title="网上书店创建表及录入数据" class="article-share-link">分享</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2020/08/20/%E7%BD%91%E4%B8%8A%E4%B9%A6%E5%BA%97%E9%A1%B9%E7%9B%AE%E5%8F%8A%E4%BD%9C%E4%B8%9A/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">前一篇</strong>
+      <div class="article-nav-title">
+        
+          网上书店项目
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2020/08/12/sql/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">后一篇</strong>
+      <div class="article-nav-title">sql</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/04/">四月 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/03/">三月 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/01/">一月 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/11/">十一月 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/10/">十月 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/09/">九月 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/08/">八月 2020</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2021/04/17/office%E6%8F%90%E5%8F%96%E5%9B%BE%E7%89%87/">office提取图片</a>
+          </li>
+        
+          <li>
+            <a href="/2021/03/30/eclipse%E5%AF%BC%E5%85%A5%E9%A1%B9%E7%9B%AE/">eclipse导入项目</a>
+          </li>
+        
+          <li>
+            <a href="/2021/03/18/eclipse/">eclipse</a>
+          </li>
+        
+          <li>
+            <a href="/2021/03/02/React/">React</a>
+          </li>
+        
+          <li>
+            <a href="/2021/03/01/javascript/">javascript</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2021 mmmmuqq<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.4.1.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
