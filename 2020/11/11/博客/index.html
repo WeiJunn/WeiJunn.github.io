@@ -153,8 +153,8 @@
 <h3 id="2-2、通过hexo命令初始化博客"><a href="#2-2、通过hexo命令初始化博客" class="headerlink" title="2.2、通过hexo命令初始化博客"></a>2.2、通过hexo命令初始化博客</h3><p>输入 hexo init<br>这一步很慢，当出现提示 start blogging with Hexo! 即初始化完成。<br>blog该文件夹内就生成了项目文件<br>这时候我们可以继续运行命令 hexo s<br>出现一个访问地址、点击即可预览。（必须要联网）<br>命令行按 ctrl+c 即可结束该服务。</p>
 <h3 id="2-3、如果此时想更新博客需要依次执行几个命令"><a href="#2-3、如果此时想更新博客需要依次执行几个命令" class="headerlink" title="2.3、如果此时想更新博客需要依次执行几个命令"></a>2.3、如果此时想更新博客需要依次执行几个命令</h3><p>hexo clean 清理缓存<br>hexo g 解析生成<br>hexo s 在本地运行你的hexo项目<br>hexo s 后在浏览器输入<code>http://localhost:4000</code>即可访问到你的hexo项目了</p>
 <h2 id="3-将博客部署到github"><a href="#3-将博客部署到github" class="headerlink" title="3.将博客部署到github"></a><center>3.将博客部署到github<center></center></center></h2><h3 id="3-1、ssh配置"><a href="#3-1、ssh配置" class="headerlink" title="3.1、ssh配置"></a>3.1、ssh配置</h3><p>部署得要一个giuhbu得账号自己注册去<br>打开git<br><img src="/2020/11/11/%E5%8D%9A%E5%AE%A2/git1.png" alt="asdf"><br>输入<br>git config –global user.name “mmmmuqq”<br>git config –global user.name “github的用户名”</p>
-<p>git config –global user.email “<a href="mailto:&#49;&#x35;&#54;&#x34;&#x30;&#x30;&#54;&#x34;&#x34;&#x33;&#64;&#x71;&#113;&#46;&#x63;&#x6f;&#109;">&#49;&#x35;&#54;&#x34;&#x30;&#x30;&#54;&#x34;&#x34;&#x33;&#64;&#x71;&#113;&#46;&#x63;&#x6f;&#109;</a>“<br>git config –global user.email “github的邮箱地址”</p>
-<p>ssh-keygen -t rsa -C “<a href="mailto:&#49;&#53;&#x36;&#x34;&#x30;&#48;&#54;&#52;&#x34;&#51;&#x40;&#113;&#113;&#x2e;&#x63;&#x6f;&#109;">&#49;&#53;&#x36;&#x34;&#x30;&#48;&#54;&#52;&#x34;&#51;&#x40;&#113;&#113;&#x2e;&#x63;&#x6f;&#109;</a>“<br>ssh-keygen -t rsa -c “github的注册邮箱地址”<br>按三次回车</p>
+<p>git config –global user.email “<a href="mailto:&#x31;&#53;&#x36;&#x34;&#x30;&#x30;&#x36;&#52;&#52;&#51;&#64;&#113;&#113;&#46;&#x63;&#111;&#109;">&#x31;&#53;&#x36;&#x34;&#x30;&#x30;&#x36;&#52;&#52;&#51;&#64;&#113;&#113;&#46;&#x63;&#111;&#109;</a>“<br>git config –global user.email “github的邮箱地址”</p>
+<p>ssh-keygen -t rsa -C “<a href="mailto:&#x31;&#53;&#x36;&#52;&#48;&#x30;&#x36;&#52;&#52;&#x33;&#x40;&#x71;&#x71;&#46;&#99;&#111;&#x6d;">&#x31;&#53;&#x36;&#52;&#48;&#x30;&#x36;&#52;&#52;&#x33;&#x40;&#x71;&#x71;&#46;&#99;&#111;&#x6d;</a>“<br>ssh-keygen -t rsa -c “github的注册邮箱地址”<br>按三次回车</p>
 <p>生成ssh<br>查看是否已经有了ssh密钥：<code>cd ~/.ssh</code><br>生成的密钥在c盘的用户文件夹里面的.ssh里面<br>ssh生成后得到了三个个文件：id_rsa id_rsa.pub<br>用记事本打开 id_rsa.pub 复制内容</p>
 <p>登陆github 进入设置 配置ssh<br><img src="/2020/11/11/%E5%8D%9A%E5%AE%A2/ssh1.png" alt="asdf"><br><img src="/2020/11/11/%E5%8D%9A%E5%AE%A2/ssh2.png" alt="asdf"></p>
 <h3 id="3-2、创建仓库"><a href="#3-2、创建仓库" class="headerlink" title="3.2、创建仓库"></a>3.2、创建仓库</h3><p>登陆github创建仓库，注意仓库名以你的 ID名称 比如 id zhangsan 仓库名：zhangsan.github.io</p>
@@ -182,7 +182,7 @@
                     <div class="mt5 mt0-l">
     <article class="dt db-l mw8 mw8-m mw5-ns center ml0-l bg-white mv3">
         <div class="dn dtc-m db-l v-mid tc pr4 pr0-l" style="min-width: 6rem;">
-            <img src="http://tachyons.io/img/avatar_1.jpg" class="mb4-l br-100 h3 w3 h4-l w4-l dib" title="mmmmuqq">
+            <!-- <img src="http://tachyons.io/img/avatar_1.jpg" class="mb4-l br-100 h3 w3 h4-l w4-l dib" title="mmmmuqq"> -->
         </div>
         <div class="dtc db-l v-mid lh-copy measure center f6 black-50 tj">
             睡着的时候不困
@@ -200,6 +200,10 @@
     <h3>近期文章</h3>
     
         <p>
+            <a href="/2021/05/19/HelloVue/">Vue</a>
+        </p>
+    
+        <p>
             <a href="/2021/04/17/office%E6%8F%90%E5%8F%96%E5%9B%BE%E7%89%87/">office三套提取图片</a>
         </p>
     
@@ -213,10 +217,6 @@
     
         <p>
             <a href="/2021/03/02/React/">运行别人React项目</a>
-        </p>
-    
-        <p>
-            <a href="/2021/03/01/javascript/">javascript</a>
         </p>
     
 </div>
