@@ -146,17 +146,18 @@
 
                     <!-- Main Post Content -->
                     <h1 id="网上书店项目一"><a href="#网上书店项目一" class="headerlink" title=" 网上书店项目一 "></a><center> 网上书店项目一 <center></center></center></h1>   <span id="more"></span> 
-<h2 id="（1）"><a href="#（1）" class="headerlink" title="（1）"></a>（1）</h2>   <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">select uname , tnum </span><br><span class="line">from user</span><br><span class="line">WHERE score&gt;500;</span><br></pre></td></tr></table></figure>
+<h2 id="（1）"><a href="#（1）" class="headerlink" title="（1）"></a>（1）</h2>   <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">select uname , tnum </span><br><span class="line">from user</span><br><span class="line">WHERE score&gt;500;</span><br></pre></td></tr></table></figure>
 <h2 id="（2）"><a href="#（2）" class="headerlink" title="（2）"></a>（2）</h2>   <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">select uname as username , tnum as  telephone </span><br><span class="line">from user</span><br><span class="line">WHERE score&lt;200;</span><br></pre></td></tr></table></figure>
 
 <h2 id="（3）"><a href="#（3）" class="headerlink" title="（3）"></a>（3）</h2>   <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">select uname, email</span><br><span class="line">from user</span><br><span class="line">WHERE email LIKE &#x27;%qq%&#x27;;</span><br></pre></td></tr></table></figure>
 <h2 id="（4）"><a href="#（4）" class="headerlink" title="（4）"></a>（4）</h2>   <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">SELECT *</span><br><span class="line">FROM b_order</span><br><span class="line">where year(b_order.orderdate)=&#x27;2016&#x27; and month(b_order.orderdate)=&#x27;10&#x27;</span><br></pre></td></tr></table></figure>
+
 <h2 id="（5）"><a href="#（5）" class="headerlink" title="（5）"></a>（5）</h2>   <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">select DISTINCT (uid)</span><br><span class="line">from b_order</span><br></pre></td></tr></table></figure>
 <h2 id="（6）"><a href="#（6）" class="headerlink" title="（6）"></a>（6）</h2>   <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">SELECT bname , discount</span><br><span class="line">FROM book</span><br><span class="line">order by discount DESC</span><br></pre></td></tr></table></figure>
 <h2 id="（7）"><a href="#（7）" class="headerlink" title="（7）"></a>（7）</h2>   <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">SELECT bname , price</span><br><span class="line">FROM book</span><br><span class="line">order by price DESC</span><br><span class="line"> limit 0,3;</span><br></pre></td></tr></table></figure>
 <h1 id="网上书店项目二"><a href="#网上书店项目二" class="headerlink" title=" 网上书店项目二 "></a><center> 网上书店项目二 <center></center></center></h1><h2 id="（1）-1"><a href="#（1）-1" class="headerlink" title="（1）"></a>（1）</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">SELECT </span><br><span class="line">max(price) AS 最高价格 , </span><br><span class="line">min(price)AS 最低价格 ,</span><br><span class="line">avg(price) AS 平均值</span><br><span class="line">FROM book</span><br></pre></td></tr></table></figure>
 <h2 id="（2）-1"><a href="#（2）-1" class="headerlink" title="（2）"></a>（2）</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">SELECT cid, count(cid) as 数量</span><br><span class="line">FROM book</span><br><span class="line">GROUP BY cid</span><br></pre></td></tr></table></figure>
-<h2 id="（3）-1"><a href="#（3）-1" class="headerlink" title="（3）"></a>（3）</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">select cid , </span><br><span class="line">max(price) AS 最高 ,</span><br><span class="line">min(price) AS 最低 ,</span><br><span class="line">avg(price) AS 平均</span><br><span class="line">from book</span><br><span class="line">GROUP BY cid</span><br></pre></td></tr></table></figure>
+<h2 id="（3）-1"><a href="#（3）-1" class="headerlink" title="（3）"></a>（3）</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">mysqlselect cid , </span><br><span class="line">max(price) AS 最高 ,</span><br><span class="line">min(price) AS 最低 ,</span><br><span class="line">avg(price) AS 平均</span><br><span class="line">from book</span><br><span class="line">GROUP BY cid</span><br></pre></td></tr></table></figure>
 <h2 id="（4）-1"><a href="#（4）-1" class="headerlink" title="（4）"></a>（4）</h2><p>错的错的</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">SELECT bid , ordernum</span><br><span class="line">FROM b_orders</span><br><span class="line">WHERE ordernum&gt;3</span><br></pre></td></tr></table></figure>
 <h1 id="网上书店项目三"><a href="#网上书店项目三" class="headerlink" title=" 网上书店项目三"></a><center> 网上书店项目三<center></center></center></h1><h2 id="（1）-2"><a href="#（1）-2" class="headerlink" title="（1）"></a>（1）</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">SELECT bname 图书名称,price 价格,cname 类别名称</span><br><span class="line">FROM book,category</span><br><span class="line">WHERE book.bid=category.cid</span><br></pre></td></tr></table></figure>
@@ -201,6 +202,10 @@
     <h3>近期文章</h3>
     
         <p>
+            <a href="/2021/05/20/Web/">JavaWeb</a>
+        </p>
+    
+        <p>
             <a href="/2021/05/19/HelloVue/">Vue</a>
         </p>
     
@@ -214,10 +219,6 @@
     
         <p>
             <a href="/2021/03/18/eclipse/">eclipse配置</a>
-        </p>
-    
-        <p>
-            <a href="/2021/03/02/React/">运行别人React项目</a>
         </p>
     
 </div>
