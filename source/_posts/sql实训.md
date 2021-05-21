@@ -5,7 +5,7 @@ tags:
 ---
 哎 做完了
 
-```
+```mysql
 
 
 --新建数据库
@@ -19,7 +19,7 @@ use software090;
 
  <!-- more -->
 
-```
+```mysql
 create table student
 	(
 		stuID char(10) not null primary key,
