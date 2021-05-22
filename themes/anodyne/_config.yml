@@ -10,10 +10,10 @@ index_font_awesome_icon_css: fa fa-magic
 menu:
   Home: /
   Archives: /archives
-  Tags: /
-  Categories: /
-  About: /
-  Contact: /
+  FriendshipLink: http://www.xxppp.top/
+  # Categories: /
+  # About: /
+  # Contact: /
 
 # Post
 default_post_title: Untitled
