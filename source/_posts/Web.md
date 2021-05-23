@@ -16,4 +16,4 @@ create table user
 );
 ```
 连接远程数据库吧http://localhost:3306 换成ip地址
-
+数据库是真的难
