@@ -10,7 +10,7 @@
 
     <!--Description-->
     
-        <meta name="description" content="登录数据库1myaql -u root -proot;">
+        <meta name="description" content="待定">
     
 
     <!--Author-->
@@ -20,7 +20,7 @@
 
     <!--Open Graph Title-->
     
-        <meta property="og:title" content="数据库代码语法"/>
+        <meta property="og:title" content="dd"/>
     
 
     <!--Open Graph Description-->
@@ -42,7 +42,7 @@
 
     <!-- Title -->
     
-    <title>数据库代码语法 - 好好学习</title>
+    <title>dd - 好好学习</title>
 
     <!-- Tachyons Core CSS -->
     <link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css">
@@ -106,8 +106,8 @@
     <!-- Title -->
     <div class="w-100 mw8 center vh-40 dt">
         <div class="dtc v-mid white">
-            <h1 class="f1-l f2-m tc tc-m tl-ns">数据库代码语法</h1>
-            <p class="f4 fw3 pab-100px tc tc-m tl-ns">2020-10-28</p>
+            <h1 class="f1-l f2-m tc tc-m tl-ns">dd</h1>
+            <p class="f4 fw3 pab-100px tc tc-m tl-ns">2021-05-23</p>
         </div>
     </div>
 
@@ -127,19 +127,8 @@
                     
 
                     <!-- Main Post Content -->
-                    <h5 id="登录数据库"><a href="#登录数据库" class="headerlink" title="登录数据库"></a>登录数据库</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">myaql -u root -proot;</span><br></pre></td></tr></table></figure>
-  <span id="more"></span>
-<h5 id="创建数据表库"><a href="#创建数据表库" class="headerlink" title="创建数据表库"></a>创建数据表库</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">create database 库名;</span><br></pre></td></tr></table></figure>
-<h5 id="创建数据表表"><a href="#创建数据表表" class="headerlink" title="创建数据表表"></a>创建数据表表</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">create table user</span><br><span class="line">(</span><br><span class="line">	name char(4),</span><br><span class="line">	tel int,</span><br><span class="line">	content int,</span><br><span class="line">	date VARCHAR(20)</span><br><span class="line">)ENGINE=MyISAM DEFAULT CHARSET=gb2312;</span><br></pre></td></tr></table></figure>
-<h5 id="查看数据表"><a href="#查看数据表" class="headerlink" title="查看数据表"></a>查看数据表</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">show databases;</span><br></pre></td></tr></table></figure>
-<h5 id="查看表的数据"><a href="#查看表的数据" class="headerlink" title="查看表的数据"></a>查看表的数据</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">desc 表名</span><br></pre></td></tr></table></figure>
-<h5 id="添加数据代码"><a href="#添加数据代码" class="headerlink" title="添加数据代码"></a>添加数据代码</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">insert into user(uid,sname,email,tnum,score)</span><br><span class="line">values(&#x27;123456&#x27;,&#x27;qert&#x27;,&#x27;123123@qq.com&#x27;,&#x27;1456789&#x27;,&#x27;100&#x27;);</span><br></pre></td></tr></table></figure>
-<h5 id="查看表格内容"><a href="#查看表格内容" class="headerlink" title="查看表格内容"></a>查看表格内容</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">select *</span><br><span class="line">from 表名;</span><br></pre></td></tr></table></figure>
-<h5 id="中文"><a href="#中文" class="headerlink" title="中文"></a>中文</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">set names gbk;</span><br></pre></td></tr></table></figure>
-<h5 id="修改表内的数据"><a href="#修改表内的数据" class="headerlink" title="修改表内的数据"></a>修改表内的数据</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">update 表名</span><br><span class="line">set orededate = &#x27;2016-10-01&#x27; 要改的数据 </span><br><span class="line">where bid=&#x27;3&#x27;and uid=&#x27;1003&#x27; 条件</span><br><span class="line">先数据后条件 不然就出错</span><br></pre></td></tr></table></figure>
-<h5 id="备份及还原数据库"><a href="#备份及还原数据库" class="headerlink" title="备份及还原数据库"></a>备份及还原数据库</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">-- 备份</span><br><span class="line">mysqldump -uroot -hlocalhost --default-character-set=gbk -p123456 网上书店&gt;D:/bak/网上书店_2001.sql</span><br><span class="line">-- 还原</span><br><span class="line">mysql -uroot -p 网上书店&lt;D:/bak/网上书店_2001.sql</span><br><span class="line">drop</span><br></pre></td></tr></table></figure>
-<h5 id="获取今天的年份"><a href="#获取今天的年份" class="headerlink" title="获取今天的年份"></a>获取今天的年份</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SELECT YEAR(NOW());</span><br></pre></td></tr></table></figure>
-<h5 id="查询日期之显示年份"><a href="#查询日期之显示年份" class="headerlink" title="查询日期之显示年份"></a>查询日期之显示年份</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">SELECT YEAR(orderdate)</span><br><span class="line">FROM b_order</span><br></pre></td></tr></table></figure>
+                    <p>待定</p>
+
                     
                     <!-- Tags Bottom -->
                     
@@ -165,7 +154,7 @@
             我睡着的时候不困
         </div>
         <div>
-            <a href="https://github.com/mmmmuqq/mmmmuqq.github.io/edit/myblog/source/_posts/数据库代码语法.md"  target="_blank">编辑</a>
+            <a href="https://github.com/mmmmuqq/mmmmuqq.github.io/edit/myblog/source/_posts/dd.md"  target="_blank">编辑</a>
         </div>
     </article>
 </div> 
