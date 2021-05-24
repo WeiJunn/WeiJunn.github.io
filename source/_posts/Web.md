@@ -16,5 +16,25 @@ create table user
 );
 ```
 连接远程数据库吧http://localhost:3306 换成ip地址
-数据库是真的难
-自动部署喜喜
+
+
+### 1、以安全模式启动MySQL
+
+>mysqld --skip-grant-tables
+
+（这个窗口保持现状，不要关闭）
+ 
+### 2、登陆mysql服务（另外新开一个cmd窗口）
+mysql -uroot -p
+ 
+提示输入密码时直接回车即可。
+
+### 3、修改密码
+>use mysql
+
+>update user set Password=password('123456') where User='root';
+
+>flush privileges;
+
+>quit; 退出
+
