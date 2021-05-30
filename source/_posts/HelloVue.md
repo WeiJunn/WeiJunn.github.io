@@ -87,4 +87,4 @@ const app = {
 //把app绑定到id为hellow-vue的控件上
 ```
 
-运行效果:<a href="https://mmmmuqq.github.io/Vue/" target="_blank">Vue</a>
+运行效果:<a href="https://weijunn.github.io/Vue/" target="_blank">Vue</a>
