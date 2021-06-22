@@ -7,13 +7,13 @@ title: 好好学习
 subtitle: ''
 description: ''
 keywords:
-author: mmmmuqq
+author: weijun
 language: zh-CN
 timezone: ''
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://mmmmuqq.github.io
+url: https://weijunn.github.io
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -103,6 +103,6 @@ theme: anodyne
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repo: git@github.com:mmmmuqq/mmmmuqq.github.io.git
+  repo: git@github.com:WeiJunn/WeiJunn.github.io.git
   barch: master
 
