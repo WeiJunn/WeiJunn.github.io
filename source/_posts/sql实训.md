@@ -1,7 +1,8 @@
 ---
 title: sql实训
 date: 2021-01-14 12:13:35
-tags:
+tags: Mysql
+categories: Mysql
 ---
 哎 做完了
 

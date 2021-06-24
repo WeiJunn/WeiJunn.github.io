@@ -1,7 +1,8 @@
 ---
-title: Vue
+title: Hello Vue
 date: 2021-05-19 09:33:39
-tags:
+tags: Vue
+categories: Vue
 ---
 # 用Vue实现点击按钮加一减一
 

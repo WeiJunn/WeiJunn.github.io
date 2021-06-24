@@ -1,7 +1,10 @@
 ---
 title: eclipse配置
 date: 2021-03-18 18:58:35
-tags:
+tags: 
+    - eclipse
+    - 教程
+categories: 教程
 ---
 # <center>配置eclipse傻瓜式教程<center>
 ## 1.下载好软件压缩包 解压（不会你学你mua的计算机）

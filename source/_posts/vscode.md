@@ -1,7 +1,10 @@
 ---
 title: vscode
 date: 2021-05-23 22:17:14
-tags:
+tags: 
+    - Vscode
+    - 小技巧
+categories: 小技巧
 ---
 
 ### 1、工作区快捷键

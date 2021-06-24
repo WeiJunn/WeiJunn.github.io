@@ -1,7 +1,10 @@
 ---
 title: eclipse导入项目
 date: 2021-03-30 17:33:21
-tags:
+tags: 
+    - eclipse
+    - 教程 
+categories: 教程
 ---
 # <center>eclipse导入项目<center>
  File—>Import—>General—>Existing Projects into workplace 
