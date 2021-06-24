@@ -5,6 +5,7 @@ tags:
     - eclipse
     - 教程
 categories: 教程
+icon: fa fa-wrench
 ---
 # <center>配置eclipse傻瓜式教程<center>
 ## 1.下载好软件压缩包 解压（不会你学你mua的计算机）

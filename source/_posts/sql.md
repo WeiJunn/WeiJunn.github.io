@@ -3,6 +3,7 @@ title: sql
 date: 2020-8-12 13:52:06
 tags: Mysql
 categories: Mysql
+icon: devicon-mysql-plain
 ---
 
 

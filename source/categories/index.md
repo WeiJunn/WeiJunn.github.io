@@ -59,7 +59,12 @@ type: categories
 ---
 
 ---
-title: js
+title: Javascript
+date: 2021-06-23 09:53:46
+type: categories
+---
+
+title: Vscode
 date: 2021-06-23 09:53:46
 type: categories
 ---

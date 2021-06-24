@@ -3,6 +3,7 @@ title: sql实训
 date: 2021-01-14 12:13:35
 tags: Mysql
 categories: Mysql
+icon: devicon-mysql-plain
 ---
 哎 做完了
 
