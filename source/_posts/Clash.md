@@ -11,6 +11,7 @@ window Clash
 
 https://wwa.lanzoui.com/iDatkphhu9i
 
-机场
+节点
 
 https://pjj01.xyz/W8CDQG
+应该不是很难吧 自己摸索一下吧 待我闲下来的时候在出个教程。
